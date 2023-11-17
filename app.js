@@ -3,19 +3,34 @@ let playerTwoScore = document.querySelector('#scoreTwo');
 const buttonPlayerOne = document.querySelector('#playerOne');
 const buttonPlayerTwo = document.querySelector('#playerTwo');
 const resetButton = document.querySelector('#reset');
+const totalScore = document.querySelector('#finalScore');
 
 buttonPlayerOne.addEventListener('click', () => {
     addPoints(playerOneScore);
+    if(playerOneScore.innerText === totalScore.value){
+        disableButtons();
+    }
 })
 
 buttonPlayerTwo.addEventListener('click', () => {
     addPoints(playerTwoScore);
+    if(playerTwoScore.innerText === totalScore.value){
+        disableButtons();
+    }
 })
 
 resetButton.addEventListener('click', () => {
     playerOneScore.innerText = '0';
     playerTwoScore.innerText = '0';
+    buttonPlayerOne.disabled = false;
+    buttonPlayerTwo.disabled = false;
 })
+
+
+function disableButtons() {
+    buttonPlayerOne.disabled = true;
+    buttonPlayerTwo.disabled = true;
+}
 
 function addPoints(score) {
     switch (score.innerText) {
