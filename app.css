@@ -7,16 +7,17 @@ body {
     background: linear-gradient(-45deg, rgb(0, 130, 170) 10%, #222daa);
 }
 
-main {
-    background-color: #f0efef;
-    height: 800px;
-    width: 100%;
+.container {
+    margin: 30px auto 0;
+    width: 90%;
+    background-color: #fff;
 }
+
 
 h1 {
     font-size: 2rem;
     padding: 20px;
-    border-style: solid;
+    border-bottom-style: solid;
     border-color: rgba(185, 185, 185, 0.63);
     border-width: 2px;
 }
