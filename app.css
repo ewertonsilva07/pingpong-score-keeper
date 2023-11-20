@@ -5,13 +5,14 @@ html {
 
 body {
     background: linear-gradient(-45deg, rgb(0, 130, 170) 10%, #222daa);
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
     margin: 30px auto 0;
     width: 90%;
     background-color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 
@@ -27,6 +28,16 @@ main p:nth-of-type(1) {
     font-size:3rem;
     padding: 20px 20px 10px 20px;
 }
+
+.spacing{
+    margin: 20px 20px 10px;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 30px;
+}
+
 
 #scoreOne {
     font-size: 8rem;
