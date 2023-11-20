@@ -13,6 +13,7 @@ body {
     width: 90%;
     background-color: #fff;
     font-size: 1.2rem;
+    border-radius: 2%;
 }
 
 
@@ -47,4 +48,65 @@ main p:nth-of-type(1) {
 #scoreTwo {
     font-size:8rem;
     color: #009c00;
+}
+
+.buttonStyle {
+    flex: 1;
+    padding: 13px 0;
+    border-style: none;
+    border-radius: 3%;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.buttonStyle:hover {
+    cursor: pointer;
+}
+
+#playerOne {
+    background-color: #00ceac;
+}
+
+#playerOne:active{
+    background-color: #009178;
+    color: #ffffff3d;
+    transition: 
+        background-color 0.6ms,
+        color 0.6ms;
+}
+
+#playerOne:disabled {
+    background-color: #005f4f;
+    color: #ffffff3d;
+    cursor: default;
+}
+
+#playerTwo {
+    background-color: #00b6ce;
+}
+
+#playerTwo:active{
+    background-color: #008da0;
+    color: #ffffff3d;
+    transition: 
+        background-color 0.6ms,
+        color 0.6ms;
+}
+
+#playerTwo:disabled {
+    background-color: #00626e;
+    color: #ffffff3d;
+    cursor: default;
+}
+
+#reset {
+    background-color: #c00000;
+}
+
+#reset:active{
+    background-color: #7c0000;
+    color: #ffffff3d;
+    transition: 
+        background-color 0.6ms,
+        color 0.6ms;
 }
