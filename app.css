@@ -118,34 +118,23 @@ main p:nth-of-type(1) {
         color 0.6ms;
 }
 
+#finalScore {
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    border: 3px solid #6d6dff70;
+    border-radius: 6%;
+}
+
 .bold {
     font-weight: 700;
 }
-
-/* @media(min-width: 576px){
-    .container {
-        font-size: 1.5rem;
-        border-radius: 5%;
-        height: 800px;
-    }
-    .buttonStyle{
-        font-size: 1.1rem;
-        padding: 15px 0;
-    }
-
-} */
-
-/* @media(min-width: 662px) {
-    .container {
-        height: 850px;
-    }
-} */
 
 @media(min-width: 768px){
     .container {
         border-radius: 5%;
         width:80%;
-        /* height: 900px; */
     }
     .buttonStyle{
         font-size: 1.2rem;
