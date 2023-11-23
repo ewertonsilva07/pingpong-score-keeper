@@ -12,32 +12,33 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <img src="images/ping-pong-lisa-keffe-unsplash.jpg" alt="ping-pong-image">
-            <h1>Ping Pong Score Keeper</h1>
-        </header>
-        <main>
-            <p><span id="scoreOne">0</span> to <span id="scoreTwo">0</span></p>
-            <p class="spacing">Use the buttons bellow to keep score.</p>
-            <label for="final-score" class="spacing"><span class="bold">Playing</span> To</label>
-            <select name="final-score" id="finalScore">
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </select>
-            
-            <div class="buttons">
+        <div class="content">
+            <header>
+                <img src="images/ping-pong-lisa-keffe-unsplash.jpg" alt="ping-pong-image">
+                <h1>Ping Pong Score Keeper</h1>
+            </header>
+            <main>
+                <p><span id="scoreOne">0</span> to <span id="scoreTwo">0</span></p>
+                <p class="spacing">Use the buttons bellow to keep score.</p>
+                <label for="final-score" class="spacing"><span class="bold">Playing</span> To</label>
+                <select name="final-score" id="finalScore">
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </main>
+            <footer class="buttons">
                 <button id="playerOne" class="buttonStyle">+1 Player One</button>
                 <button id="playerTwo" class="buttonStyle">+1 Player Two</button>
                 <button id="reset" class="buttonStyle">Reset</button>
-            </div>
-        </main>
+            </footer>
+        </div>
     </div>
-
     <script src="js/app.js"></script>
-
-</body>
-</html>
+    
+    </body>
+    
+    </html>
