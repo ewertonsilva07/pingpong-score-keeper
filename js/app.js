@@ -8,6 +8,8 @@ const totalScore = document.querySelector('#finalScore');
 buttonPlayerOne.addEventListener('click', () => {
     addPoints(playerOneScore);
     if(playerOneScore.innerText === totalScore.value){
+        playerOneScore.classList.add('winner');
+        playerTwoScore.classList.add('loser');
         disableButtons();
     }
 })
@@ -15,16 +17,14 @@ buttonPlayerOne.addEventListener('click', () => {
 buttonPlayerTwo.addEventListener('click', () => {
     addPoints(playerTwoScore);
     if(playerTwoScore.innerText === totalScore.value){
+        playerTwoScore.classList.add('winner');
+        playerOneScore.classList.add('loser');
         disableButtons();
     }
 })
 
-resetButton.addEventListener('click', () => {
-    playerOneScore.innerText = '0';
-    playerTwoScore.innerText = '0';
-    buttonPlayerOne.disabled = false;
-    buttonPlayerTwo.disabled = false;
-})
+resetButton.addEventListener('click', reset);
+totalScore.addEventListener('change', reset);
 
 
 function disableButtons() {
@@ -67,4 +67,11 @@ function addPoints(score) {
     }
 }
 
-
+function reset() {
+    playerOneScore.innerText = '0';
+    playerTwoScore.innerText = '0';
+    buttonPlayerOne.disabled = false;
+    buttonPlayerTwo.disabled = false;
+    playerOneScore.classList.remove('winner', 'loser');
+    playerTwoScore.classList.remove('winner', 'loser');
+}

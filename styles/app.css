@@ -52,12 +52,10 @@ main p:nth-of-type(1) {
 
 #scoreOne {
     font-size: 8rem;
-    color: #c00000;
 }
 
 #scoreTwo {
     font-size:8rem;
-    color: #009c00;
 }
 
 .buttonStyle {
@@ -141,3 +139,10 @@ main p:nth-of-type(1) {
     }
 }
 
+.winner {
+    color: #009c00;
+}
+
+.loser {
+    color: #c00000;
+}
